@@ -3,7 +3,7 @@ TARGET = DEFSPTOOL.x
 all: $(TARGET)
 
 $(TARGET): DEFSPTOOL.BAS
-	m68k-xelf-bas -o $@ $^
+	m68k-xelf-bas -o $@ $<
 
 DEFSPTOOL.BAS:
 	./getdefsp.sh

@@ -5,7 +5,7 @@ CC = $(CROSS)gcc
 AS = $(CROSS)as
 LD = $(CROSS)gcc
 
-CFLAGS = -m68000 -O2
+CFLAGS = -m68000 -O2 -g
 LDFLAGS = -Ttext=0x6800 -s -specs=x68knodos.specs
 
 all: $(TARGET)

@@ -6,7 +6,7 @@ CC = $(CROSS)gcc
 AS = $(CROSS)as
 LD = $(CROSS)gcc
 
-CFLAGS = -m68000 -O2
+CFLAGS = -m68000 -O2 -g
 LDFLAGS = -lm -lbas -liocs -ldos
 
 LIBS = lib/xsp2lib.o lib/pcm8afnc.o lib/pcg90.o
