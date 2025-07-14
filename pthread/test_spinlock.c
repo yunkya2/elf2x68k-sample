@@ -3,7 +3,7 @@
 #include <pthread.h>
 #include <unistd.h>
 
-#ifdef _POSIX_SPIN_LOCKS
+#if defined(_POSIX_SPIN_LOCKS) && _POSIX_SPIN_LOCKS > 0
 
 static pthread_spinlock_t spinlock;
 static int spin_counter = 0;

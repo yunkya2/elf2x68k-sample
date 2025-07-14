@@ -3,7 +3,7 @@
 #include <pthread.h>
 #include <unistd.h>
 
-#ifdef _POSIX_BARRIERS
+#if defined(_POSIX_BARRIERS) && _POSIX_BARRIERS > 0
 
 static pthread_barrier_t barrier;
 static int thread_count = 4;
